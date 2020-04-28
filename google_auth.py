@@ -7,9 +7,7 @@ from google.auth.transport.requests import Request
 
 
 def authenticate_to_google(CLIENT_SECRET_FILE, AUTH_SCOPES, api_name, api_version):
-    """Shows basic usage of the People API.
-    Prints the name of the first 10 connections.
-    """
+    """Authentication to Google Services"""
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
