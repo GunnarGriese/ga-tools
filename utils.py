@@ -1,7 +1,7 @@
 import pandas as pd
 
 class Filter:
-    def __init__(self, f_id,f_name, f_type, f_update, f_details=None):
+    def __init__(self, f_id,f_name, f_type=None, f_update=None, f_details=None):
         self.id = f_id
         self.name = f_name
         self.type = f_type
