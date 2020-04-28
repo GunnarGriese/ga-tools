@@ -64,6 +64,7 @@ def get_view_filters(api_service, account_id, property_id, view_id):
     return view_filters
 
 if __name__ == '__main__':
+    """Print all filter (details) associated with a view to console"""
     api_service = google_auth.authenticate_to_google(CLIENT_SECRET_FILE, SCOPES, API_NAME, API_VERSION)
     filter_list = get_account_filters(api_service, ACCOUNT_ID)
     filter_dict = handle_filters(filter_list)
